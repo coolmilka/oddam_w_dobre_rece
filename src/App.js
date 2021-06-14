@@ -1,11 +1,16 @@
 import React from 'react'
+import { BrowserRouter, Route } from 'react-router-dom';
+
+import Home from './components/Home'
 
 
 const App = props => {
   return (
 
     <div>
-      <h1>Andrzej ANDRZEJ</h1>
+      <BrowserRouter>
+      <Route path='/' exact component={Home} />
+      </BrowserRouter>
     </div>
   )
 }
